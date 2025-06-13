@@ -1,10 +1,10 @@
 <template>
   <button
     type="button"
-    class="inline-block h-(--_button-size) min-w-(--_button-size) items-center rounded-(--_button-radius) border-(length:--_button-border-size) border-(color:--_button-border) bg-(--_button-bg) text-center text-(length:--_button-font-size) font-(--_button-font-weight) text-(color:--_button-text) enabled:cursor-pointer enabled:hover:border-(--_button-border-hover) enabled:hover:bg-(--_button-bg-hover) enabled:hover:text-(--_button-text-hover) enabled:active:bg-(--_button-bg-active) enabled:active:text-(--_button-text-active) data-[role=link]:underline"
+    class="h-(--_button-size) min-w-(--_button-size) rounded-(--_button-radius) border-(length:--_button-border-size) border-(color:--_button-border) bg-(--_button-bg) text-(length:--_button-font-size) font-(--_button-font-weight) text-(color:--_button-text) enabled:hover:border-(--_button-border-hover) enabled:hover:bg-(--_button-bg-hover) enabled:hover:text-(--_button-text-hover) enabled:active:bg-(--_button-bg-active) enabled:active:text-(--_button-text-active) inline-block items-center text-center enabled:cursor-pointer data-[role=link]:underline"
   >
     <span
-      class="flex h-full items-center justify-center gap-(--_button-gap)"
+      class="gap-(--_button-gap) flex h-full items-center justify-center"
       :class="{
         'pr-(--_button-min-p)': !!slots.append && !slots.icon,
         'pl-(--_button-min-p)': !!slots.prepend && !slots.icon,
@@ -23,6 +23,8 @@
 </template>
 
 <script setup>
+import { useSlots } from "vue";
+
 const slots = useSlots();
 </script>
 
