@@ -1,0 +1,9 @@
+<template>
+  <Icon
+    name="agenda:spinner"
+    aria-live="polite"
+    role="status"
+    aria-hidden="false"
+    aria-label="Chargement"
+  />
+</template>

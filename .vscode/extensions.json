@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "vue.volar", // Handle .vue files
+    "esbenp.prettier-vscode", // Format files
+    "dbaeumer.vscode-eslint", // Lint JS
+    "bradlc.vscode-tailwindcss", // Tailwind tooling + Lint CSS
+    // Optional
+    "austenc.tailwind-docs", // Tailwind doc shortcut
+    "stivo.tailwind-fold" // Fold class shortcut
+  ]
+}

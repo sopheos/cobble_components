@@ -1,0 +1,12 @@
+{
+  "name": "cobble_components",
+  "version": "1.0.0",
+  "main": "nuxt.js",
+  "author": "Lucas",
+  "description": "Components library",
+  "license": "MIT",
+  "peerDependencies": {
+    "nuxt": "^3.17.4",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  }
+}
